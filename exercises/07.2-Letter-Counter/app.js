@@ -7,15 +7,15 @@ for (const letra of par) {
     let aux = letra.toLowerCase();
     // console.log(aux);
 
-    if (aux != ' ') {
+    /*if (aux != ' ') {
         if (aux in counts) { counts.aux += 1 }
         else counts.aux = 1
-    }
+    }*/
 
-   /* if (aux != ' ') {
+   if (aux != ' ') {
         if (aux in counts) { counts[aux] += 1 }
         else counts[aux] = 1
-    }*/
+    }
 
 }
 
