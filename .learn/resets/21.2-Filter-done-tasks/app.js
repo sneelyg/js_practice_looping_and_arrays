@@ -10,9 +10,3 @@ let tasks = [
 ];
 
 //your code here
-
-var todolist = tasks.filter (function (obj){
-	return (! obj.done);
-
-});
-console.log(todolist);
