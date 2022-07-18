@@ -9,5 +9,31 @@ let parking_state = [
 
 // Your code here
 
+var getParkingLotState = (arr) => {
 
-console.log(getParkingLotState(parking_state))
+  let disponibles = 0;
+  let ocupados = 0;
+  let totales = 0;
+  var state = {};
+
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+      if (arr[i][j] == 1) {
+        totales++;
+        ocupados++;
+      }
+      else if (arr[i][j] == 2) {
+        totales++;
+        disponibles++;
+      }
+    }
+  }
+
+  state.availableSlots = disponibles;
+  state.totalSlots = totales;
+  state.occupiedSlots = ocupados;
+
+  return state;
+
+}
+console.log(getParkingLotState(parking_state));
